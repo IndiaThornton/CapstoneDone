@@ -1,0 +1,84 @@
+// const navToggle = document.querySelector('.nav-toggle')
+// const links = document.querySelector('.links')
+
+// navToggle.addEventListener('click', () => {
+//     if(links.classList.contains('show-links')){
+//         links.classList.remove('show-links')
+//     } else {
+//         links.classList.add('show-links')
+//     }
+// });
+
+
+const sneakContainer = document.querySelector("#sneak-container")
+const form = document.querySelector('form')
+
+
+const sneakCallback = ({ data : sneaks }) => displaySneaks(sneaks)
+const errCallback = err => console.log(err)
+
+const getsneaks = () => axios.get('/api/sneaks').then(sneakCallback).catch(errCallback)
+const createsneak = body => axios.post('/api/sneaks', body).then(sneakCallback).catch(errCallback)
+
+
+function submitHandler(e) {
+    e.preventDefault()
+    let shoe = document.querySelector('#shoe')
+    let image = document.querySelector('#image')
+
+    let bodyObj = {
+        shoe: shoe.value,
+        image: image.value
+    }
+
+    createsneak(bodyObj)
+
+    shoe.value = " "
+    image.value = " "
+}
+
+function createSneakCard(sneak) {
+    const sneakCard = document.createElement('div')
+    sneakCard.classList.add('sneak-card')
+
+    sneakCard.innerHTML = `
+    <p class="sneak">${sneak.shoe} : </p>
+    <br>
+    <img src = "${sneak.image}"  width="800" height="521">
+    <p> --------------------------------------</p>
+    `
+
+    sneakContainer.appendChild (sneakCard)
+}
+
+function displaySneaks(arr) {
+    sneakContainer.innerHTML = ``
+    for (let i = 0; i < arr.length; i++) {
+        createSneakCard(arr[i])
+    }
+}
+form.addEventListener('submit', submitHandler)
+
+getsneaks()
+
+
+// const about = document.querySelector(".about");
+// const btns = document.querySelectorAll(".tab-btn");
+// const articles = document.querySelectorAll(".content");
+
+// about.addEventListener("click", function (e) {
+//   const id = e.target.dataset.id;
+//   if (id) {
+   
+//     btns.forEach(function (btn) {
+//       btn.classList.remove("active");
+//     });
+//     e.target.classList.add("active");
+    
+//     articles.forEach(function (article) {
+//       article.classList.remove("active");
+//     });
+//     const element = document.getElementById(id);
+//     element.classList.add("active");
+//   }
+// });

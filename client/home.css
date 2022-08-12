@@ -1,0 +1,95 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Special+Elite&display=swap');
+*
+ {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+ 
+  body {
+    
+    
+    background-image: url("https://pbs.twimg.com/media/EXNMb7uXgAEdKCa?format=jpg&name=large");
+    background-size:cover;
+    background-blend-mode:luminosity;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    font-family: 'Special Elite', cursive;
+    
+  }
+
+    h1{
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgb(0, 0, 0);
+    font-family: 'Special Elite', cursive;
+    font-size: 4em;
+  }
+
+  a{
+      color: rgb(192, 188, 180);
+  }
+  
+  
+  
+  .label{
+    padding: 20px 130px;
+    font-size: 3em;
+    color: #000000;
+    margin-bottom: auto;
+    width: fit-content;
+    font-family: 'Special Elite', cursive;
+    border-radius: 25%;
+  }
+  #sneaker-container {
+    align-items: center;
+    display: grid;
+    height: auto;
+    width:70%;
+    margin-left:100px;
+    padding: 50px;
+  }
+  .text, .item-text, a, p {
+      font-family: 'Patrick Hand', cursive;
+      font-size: 26px;
+      width: 70%;
+      text-align: center;
+      margin: auto;
+    }
+    .sneaker-header {
+      margin-left:100px;
+      margin-top: 50px;
+      text-align: center;
+    }
+    
+    li {
+      font-family:'Patrick Hand', cursive;
+      font-size: 18px;
+    }
+    ul {
+      list-style-type: none;
+  }
+  form {
+   
+    display: grid;
+    border: solid 2px ;
+    width: 500px;
+    height: 400px;
+    margin-top: 150px;
+    margin-left: 100px;
+    padding: 50px;
+    
+  }
+
+  
+
+  
+  
+  
+  

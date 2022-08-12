@@ -1,0 +1,160 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Special+Elite&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+ 
+  body {
+    
+    background-image: url("https://images5.alphacoders.com/688/thumb-1920-688483.jpg");
+    background-size:cover;
+    background-blend-mode:luminosity;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Special Elite', cursive;
+    
+  }
+  
+  a.home{
+      color: wheat;
+
+  }
+  header {
+    background-color: #853d3d4b;
+    height: 111px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    color: white;
+    margin-bottom: 30px;
+  }
+  
+  header h1 {
+    font-size: 36px;
+    padding-top: 10px;
+  }
+  
+  .boards {
+    display: flex;
+    flex: .5;
+  }
+  .list {
+    width: 71vw;
+    border: 1px solid #403e5f;
+    background-color: rgba(39, 86, 131, 0.479);
+    opacity: 90%;
+    display: flex;
+    flex-direction: column;
+    color: #dabfd5;
+    align-content: space-around;
+    font-weight: 700;
+    height: 40vh;
+    margin-right: 50px;
+    font-family: 'Special Elite', cursive;
+    background-image: url(https://images.unsplash.com/photo-1603484477859-abe6a73f9366?ixlib=rb-1.2.1&w=1080&fit=max&q=80&fm=jpg&crop=entropy&cs=tinysrgb);
+}
+ 
+  .list .title {
+    margin: 5px 10px;
+    padding: 5px;
+    color:black;
+    font-family: 'Special Elite', cursive;
+
+  }
+  
+  .list .item {
+    padding: 5px;
+    border-bottom: 1px solid #28192c;
+    background-color: rgb(160, 130, 86);
+    font-family: 'Special Elite', cursive;
+
+  }
+  
+  .list input, button {
+    color: #241f22a2;
+    display: flex;
+    justify-content: center;
+    margin: auto;
+  }
+  
+  button {
+    padding: 2px;
+    background-color: rgb(247, 243, 239);
+    width: 35px;
+    height: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-style:outset ;
+    margin:none;
+    }
+  
+  .heading {
+    display: flex;
+    flex-wrap: wrap;
+    border-bottom: 1px solid #b60909;
+  }
+  
+  .heading .title {
+    width: 200px;
+  }
+  .heading .done{
+    width: 200px;
+  }
+  .heading .add {
+    font-size: 18px;
+    cursor: pointer;
+}
+  
+  .error {
+    color: red;
+  }
+
+aside{
+position: absolute;
+ display: flex;
+justify-content: flex-start;
+flex-direction: row;
+align-content: flex-start;
+box-sizing: border-box;
+margin-top: 400px;
+box-sizing: border-box;
+color: rgba(243, 243, 243, 0.904);
+padding-bottom: 5px;
+margin-bottom: 5px;
+background-color: rgba(133, 26, 65, 0.479);
+background-size: auto;
+font-size: 1em;
+
+
+} 
+hr{
+  width: 100vw;
+}
+a.netflix{
+  color: rgb(93, 158, 211);
+  
+}
+.netflix{
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+  margin-top: -3px;
+  padding-top: 10px;
+}
+.sneaker-container{
+  display: flex;
+  justify-content: center;
+  align-items: space-between;
+  padding: 3px;
+  margin: 7px;
+}
+.movies-container img{
+  margin-left: 31px;
+  margin-right: 15px;
+}
