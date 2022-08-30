@@ -10,10 +10,7 @@ app.use(express.json())
 app.use(express.static('client'))
 app.use(cors())
 
-// const options={
-//      index:"home.html"
-// }
-// app.use("/",express.static("home",options))
+
 app.get('/', (req, res) => {
      res.sendFile(path.join(__dirname, '../client/home.html'))
  });

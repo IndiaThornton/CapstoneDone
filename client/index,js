@@ -1,13 +1,3 @@
-// const navToggle = document.querySelector('.nav-toggle')
-// const links = document.querySelector('.links')
-
-// navToggle.addEventListener('click', () => {
-//     if(links.classList.contains('show-links')){
-//         links.classList.remove('show-links')
-//     } else {
-//         links.classList.add('show-links')
-//     }
-// });
 
 
 const sneakContainer = document.querySelector("#sneak-container")
@@ -62,23 +52,3 @@ form.addEventListener('submit', submitHandler)
 getsneaks()
 
 
-// const about = document.querySelector(".about");
-// const btns = document.querySelectorAll(".tab-btn");
-// const articles = document.querySelectorAll(".content");
-
-// about.addEventListener("click", function (e) {
-//   const id = e.target.dataset.id;
-//   if (id) {
-   
-//     btns.forEach(function (btn) {
-//       btn.classList.remove("active");
-//     });
-//     e.target.classList.add("active");
-    
-//     articles.forEach(function (article) {
-//       article.classList.remove("active");
-//     });
-//     const element = document.getElementById(id);
-//     element.classList.add("active");
-//   }
-// });
